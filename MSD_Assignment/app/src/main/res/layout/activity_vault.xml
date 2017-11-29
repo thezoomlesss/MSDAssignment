@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:background="@drawable/grdnt">
+
+
+
+    <Button android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/log_out_button"
+            android:background="#009a9a"
+            android:textColor="#d9e5f3"
+            android:textStyle="bold"
+            android:text="Log Out"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+    <Button android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_website"
+            android:text="Add New Website"
+            android:background="#009a9a"
+            android:textColor="#d9e5f3"
+            android:textStyle="bold"
+            android:layout_above="@id/log_out_button"
+            android:layout_marginBottom="10dp"/>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+
+        android:layout_height="fill_parent"
+        android:layout_above="@id/add_website"
+        android:layout_alignParentTop="true"
+        android:headerDividersEnabled="false"
+        android:paddingTop="20dp"/>
+
+</RelativeLayout>
